@@ -23,52 +23,161 @@
         <div class="logo">watchcharm</div>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Catalog</a></li>
-            <li><a href="#">Sale</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#sale">Sale</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
           </ul>
         </nav>
         <div class="social-icons">
-          <a href="#"
-            ><img
-              src="images/facebook.png"
-              alt="Facebook"
-          /></a>
-          <a href="#"
-            ><img
-              src="images/instagram.png"
-              alt="Instagram"
-          /></a>
-          <a href="#"
-            ><img
-              src="images/pinterest.png"
-              alt="Pinterest"
-          /></a>
-          <a href="#"
-            ><img
-              src="images/youtube.png"
-              alt="YouTube"
-          /></a>
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/goitclub/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <svg
+                  class="social-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use
+                    class="icon-norm"
+                    href="./images/icons.svg#icon-black-instagram-norm"
+                  ></use>
+                  <use
+                    class="icon-hover"
+                    href="./images/icons.svg#icon-instagram-hover"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/c/GoIT"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <svg
+                  class="social-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use
+                    class="icon-norm"
+                    href="./images/icons.svg#icon-black-youtube-norm"
+                  ></use>
+                  <use
+                    class="icon-hover"
+                    href="./images/icons.svg#icon-youtube-hover"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/goITclub/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <svg
+                  class="social-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use
+                    class="icon-norm"
+                    href="./images/icons.svg#icon-black-facebook-norm"
+                  ></use>
+                  <use
+                    class="icon-hover"
+                    href="./images/icons.svg#icon-facebook-hover"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
 
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Welcome to our collection of premium watches</h1>
-      </div>
-      <div class="hero-image">
-        <img
-          src="images/hero-watch.jpg"
-          alt="Колекція преміальних годинників"
-        />
+    <section
+      class="hero"
+      id="hero"
+    >
+      <div class="container">
+        <div class="hero-text">
+          <h1>
+            Welcome to our
+            <span
+              style="
+                color: #007bff;
+                background-color: #e0f2f7;
+                padding: 0.1em 0.3em;
+                border-radius: 5px;
+              "
+              >collection</span
+            >
+            of premium watches
+          </h1>
+          <p>
+            Our watches are not just timepieces, but also an expression of your
+            personality and lifestyle. From classic designs to modern ones, we
+            have a watch to suit every taste and occasion.
+          </p>
+        </div>
+        <div class="hero-images">
+          <img
+            src="./images/Ellipse 21.jpg"
+            alt="Фотографія 1"
+            style="
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              object-fit: cover;
+            "
+          />
+          <img
+            src="./images/Ellipse 22.jpg"
+            alt="Фотографія 2"
+            style="
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              object-fit: cover;
+              margin-left: 10px;
+            "
+          />
+          <img
+            src="./images/Ellipse 23.jpg"
+            alt="Фотографія 3"
+            style="
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              object-fit: cover;
+              margin-left: 10px;
+            "
+          />
+        </div>
+        <a
+          href="#footer"
+          class="scroll-down-button"
+          >Scroll down</a
+        >
       </div>
     </section>
 
-    <section class="about-us">
+    <section
+      class="about-us"
+      id="about-us"
+    >
       <h2>About Us</h2>
       <div class="about-us-content">
         <div class="about-us-text"></div>
@@ -79,60 +188,86 @@
           />
         </div>
       </div>
+      <a
+        href="#catalog"
+        class="view-catalog-button"
+        >View catalog</a
+      >
     </section>
 
-    <section class="catalog">
+    <section
+      class="catalog"
+      id="catalog"
+    >
       <h2>Catalog</h2>
-      <div class="catalog-grid">
-        <div class="product-card">
+      <ul class="catalog-grid">
+        <li class="product-card">
           <img
             src="images/watch1.jpg"
             alt="Годинник 1"
           />
-        </div>
-        <div class="product-card">
+        </li>
+        <li class="product-card">
           <img
             src="images/watch2.jpg"
             alt="Годинник 2"
           />
-        </div>
-        <div class="product-card">
+        </li>
+        <li class="product-card">
           <img
             src="images/watch3.jpg"
             alt="Годинник 3"
           />
-        </div>
-        <div class="product-card">
+        </li>
+        <li class="product-card">
           <img
             src="images/watch4.jpg"
             alt="Годинник 4"
           />
-        </div>
-        <div class="product-card">
+        </li>
+        <li class="product-card">
           <img
             src="images/watch5.jpg"
             alt="Годинник 5"
           />
-        </div>
-        <div class="product-card">
+        </li>
+        <li class="product-card">
           <img
             src="images/watch6.jpg"
             alt="Годинник 6"
           />
-        </div>
-      </div>
+        </li>
+      </ul>
+      <button
+        type="button"
+        class="show-more-button"
+      >
+        Show more
+      </button>
     </section>
 
-    <section class="call-to-action">
-      <div class="cta-text">
+    <section
+      class="advertisement"
+      id="advertisement"
+    >
+      <h2 class="visually-hidden">Advertisement</h2>
+      <div class="advertisement-content">
         <p>
-          Choose your time, making every moment unique. Time is your style, and
-          we respect it.
+          Discover our exclusive collection of limited edition watches. Each
+          piece is a masterpiece of craftsmanship and design.
         </p>
+        <a
+          href="#contact-us"
+          class="contact-us-link"
+          >Contact us</a
+        >
       </div>
     </section>
 
-    <section class="sale">
+    <section
+      class="sale"
+      id="sale"
+    >
       <h2>Sale</h2>
       <div class="sale-content">
         <div class="sale-products">
@@ -152,26 +287,42 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section
+      class="reviews"
+      id="reviews"
+    >
       <h2>Reviews</h2>
-      <div class="reviews-grid">
-        <div class="review-card"></div>
-        <div class="review-card"></div>
-        <div class="review-card"></div>
-      </div>
+      <ul class="reviews-list">
+        <li class="review-card"></li>
+        <li class="review-card"></li>
+        <li class="review-card"></li>
+      </ul>
     </section>
 
-    <section class="contact-us">
+    <section
+      class="contact-us"
+      id="contact-us"
+    >
       <h2>Contact Us</h2>
       <div class="contact-us-content">
         <div class="contact-form">
           <input
             type="text"
             placeholder="Ім'я"
+            required
+            pattern="^[a-zA-Zа-яА-Я\s]+$"
           />
           <input
             type="email"
             placeholder="Email"
+            required
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
+          <input
+            type="tel"
+            placeholder="+380-XX-XXX-XX-XX"
+            required
+            pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
           />
           <textarea placeholder="Повідомлення"></textarea>
           <button type="submit">Надіслати</button>
@@ -185,8 +336,97 @@
       </div>
     </section>
 
-    <footer>
-      <div class="footer-content"></div>
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="logo">watchcharm</div>
+        <div class="social-icons">
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/goitclub/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <svg
+                  class="social-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use
+                    class="icon-norm"
+                    href="./images/icons.svg#icon-black-instagram-norm"
+                  ></use>
+                  <use
+                    class="icon-hover"
+                    href="./images/icons.svg#icon-instagram-hover"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/c/GoIT"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <svg
+                  class="social-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use
+                    class="icon-norm"
+                    href="./images/icons.svg#icon-black-youtube-norm"
+                  ></use>
+                  <use
+                    class="icon-hover"
+                    href="./images/icons.svg#icon-youtube-hover"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/goITclub/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <svg
+                  class="social-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use
+                    class="icon-norm"
+                    href="./images/icons.svg#icon-black-facebook-norm"
+                  ></use>
+                  <use
+                    class="icon-hover"
+                    href="./images/icons.svg#icon-facebook-hover"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="slogan">Time is your style, and we respect it.</p>
+        <nav>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#sale">Sale</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+          </ul>
+        </nav>
+        <address class="contacts">
+          <a href="tel:+380-XX-XXX-XX-XX">+380-XX-XXX-XX-XX</a>
+        </address>
+      </div>
     </footer>
 
     <script src="script.js"></script>
