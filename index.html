@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>The Watch Spot</title>
+    <title>WebStudio</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+
     <link
       rel="icon"
       href="images/favicon-2.png"
@@ -18,6 +40,7 @@
     />
   </head>
   <body>
+    <!-- header -->
     <header>
       <div class="container">
         <div class="logo">watchcharm</div>
@@ -106,7 +129,7 @@
         </div>
       </div>
     </header>
-
+    <!-- section 1 -->
     <section
       class="hero"
       id="hero"
@@ -173,7 +196,7 @@
         >
       </div>
     </section>
-
+    <!-- section 2 about-us -->
     <section
       class="about-us"
       id="about-us"
@@ -194,7 +217,7 @@
         >View catalog</a
       >
     </section>
-
+    <!-- section 3 catalog -->
     <section
       class="catalog"
       id="catalog"
@@ -245,25 +268,24 @@
         Show more
       </button>
     </section>
-
     <section
       class="advertisement"
       id="advertisement"
     >
-      <h2 class="visually-hidden">Advertisement</h2>
-      <div class="advertisement-content">
+      <div class="container">
         <p>
-          Discover our exclusive collection of limited edition watches. Each
-          piece is a masterpiece of craftsmanship and design.
+          Choose <span class="highlighted-text">your story</span>, making every
+          moment unique. Time is your style, and we reveal it.
         </p>
-        <a
-          href="#contact-us"
-          class="contact-us-link"
-          >Contact us</a
+        <button
+          type="button"
+          class="contact-us-button"
         >
+          Contact Us
+        </button>
       </div>
     </section>
-
+    <!-- section 5 sale -->
     <section
       class="sale"
       id="sale"
@@ -286,136 +308,160 @@
         </div>
       </div>
     </section>
-
+    <!-- section 6 reviews -->
     <section
       class="reviews"
       id="reviews"
     >
       <h2>Reviews</h2>
       <ul class="reviews-list">
-        <li class="review-card"></li>
-        <li class="review-card"></li>
-        <li class="review-card"></li>
+        <li class="review-card">
+          <img
+            src="./images/Ellipse 21.jpg"
+            alt="John Wax"
+            class="review-author-image"
+          />
+          <h3 class="review-author">John Wax</h3>
+          <p class="review-text">
+            Buying a watch from was the best choice for me. The design is
+            perfectly combined with high quality materials. The strap fits
+            nicely on the hand, and the mechanism works flawlessly.
+          </p>
+        </li>
+        <li class="review-card">
+          <img
+            src="./images/Ellipse 22.jpg"
+            alt="Victoria Romashenko"
+            class="review-author-image"
+          />
+          <h3 class="review-author">Victoria Romashenko</h3>
+          <p class="review-text">
+            Can't take my eyes off my watch from. Every time I put it on, it is
+            admired by those around me. The build quality and attention to
+            detail make it a real gem among my accessories.
+          </p>
+        </li>
+        <li class="review-card">
+          <img
+            src="./images/Ellipse 23.jpg"
+            alt="Anastasia Trachuk"
+            class="review-author-image"
+          />
+          <h3 class="review-author">Anastasia Trachuk</h3>
+          <p class="review-text">
+            My watch from is a real masterpiece. Every detail impresses with the
+            high quality of execution. Special features like [specify features]
+            make it an indispensable companion in my daily life.
+          </p>
+        </li>
       </ul>
     </section>
-
+    <!-- section 7 contacts-us -->
     <section
       class="contact-us"
       id="contact-us"
     >
       <h2>Contact Us</h2>
-      <div class="contact-us-content">
-        <div class="contact-form">
-          <input
-            type="text"
-            placeholder="Ім'я"
-            required
-            pattern="^[a-zA-Zа-яА-Я\s]+$"
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            required
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-          />
-          <input
-            type="tel"
-            placeholder="+380-XX-XXX-XX-XX"
-            required
-            pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
-          />
-          <textarea placeholder="Повідомлення"></textarea>
-          <button type="submit">Надіслати</button>
+      <div class="contact-us-wrapper">
+        <div class="contact-form-container">
+          <p class="contact-form-description">
+            Please use the form below to contact us. Enter your name, email,
+            phone, and message and we'll get back to you shortly.
+          </p>
+          <form class="contact-form">
+            <input
+              type="text"
+              placeholder="Name"
+              required
+              pattern="^[a-zA-Zа-яА-Я\s]+$"
+              class="contact-input"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              class="contact-input"
+            />
+            <input
+              type="tel"
+              placeholder="+380"
+              required
+              pattern="^\+\d{3}$"
+              class="contact-input"
+            />
+            <textarea
+              placeholder="Comment"
+              class="contact-textarea"
+            ></textarea>
+            <button
+              type="submit"
+              class="contact-button"
+            >
+              Send
+            </button>
+          </form>
         </div>
-        <div class="contact-image">
+        <div class="contact-image-container">
           <img
-            src="images/contact-us.jpg"
-            alt="Зв'яжіться з нами"
+            src="./images/contact_us-img-1.jpg"
+            alt="Contact Us Watch"
+            class="contact-image"
           />
         </div>
       </div>
     </section>
-
+    <!-- footer -->
     <footer id="footer">
-      <div class="footer-content">
-        <div class="logo">watchcharm</div>
-        <div class="social-icons">
-          <ul>
-            <li>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo-social">
+            <div class="logo">watchcharm</div>
+            <div class="social-icons">
               <a
-                href="https://www.instagram.com/goitclub/"
+                href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="social-link"
+                class="social-link facebook"
               >
-                <svg
-                  class="social-icon"
-                  width="24"
-                  height="24"
-                >
-                  <use
-                    class="icon-norm"
-                    href="./images/icons.svg#icon-black-instagram-norm"
-                  ></use>
-                  <use
-                    class="icon-hover"
-                    href="./images/icons.svg#icon-instagram-hover"
-                  ></use>
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
-            </li>
-            <li>
               <a
-                href="https://www.youtube.com/c/GoIT"
+                href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="social-link"
+                class="social-link instagram"
               >
-                <svg
-                  class="social-icon"
-                  width="24"
-                  height="24"
-                >
-                  <use
-                    class="icon-norm"
-                    href="./images/icons.svg#icon-black-youtube-norm"
-                  ></use>
-                  <use
-                    class="icon-hover"
-                    href="./images/icons.svg#icon-youtube-hover"
-                  ></use>
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
-            </li>
-            <li>
               <a
-                href="https://www.facebook.com/goITclub/"
+                href="https://www.youtube.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="social-link"
+                class="social-link youtube"
               >
-                <svg
-                  class="social-icon"
-                  width="24"
-                  height="24"
-                >
-                  <use
-                    class="icon-norm"
-                    href="./images/icons.svg#icon-black-facebook-norm"
-                  ></use>
-                  <use
-                    class="icon-hover"
-                    href="./images/icons.svg#icon-facebook-hover"
-                  ></use>
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-youtube"></use>
                 </svg>
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
+          <div class="footer-text">
+            <p>Have the time of your life with our</p>
+            <p>watches: where high-class craftsmanship</p>
+            <p>meets impeccable design</p>
+          </div>
+          <div class="footer-contacts">
+            <a href="tel:+380664439426">+380 (66) 443-94-26</a>
+          </div>
         </div>
-        <p class="slogan">Time is your style, and we respect it.</p>
-        <nav>
+        <nav class="footer-nav">
           <ul>
-            <li><a href="#hero">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about-us">About Us</a></li>
             <li><a href="#catalog">Catalog</a></li>
             <li><a href="#sale">Sale</a></li>
@@ -423,9 +469,14 @@
             <li><a href="#contact-us">Contact Us</a></li>
           </ul>
         </nav>
-        <address class="contacts">
-          <a href="tel:+380-XX-XXX-XX-XX">+380-XX-XXX-XX-XX</a>
-        </address>
+        <div class="footer-bottom">
+          <p class="copyright">© 2023 The Watch Spot. All rights reserved.</p>
+          <p class="address">1678 S. Pioneer Road Salt Lake City UT 84104</p>
+          <div class="privacy-terms">
+            <a href="/terms">Terms of Service</a>
+            <a href="/privacy">Privacy Policy</a>
+          </div>
+        </div>
       </div>
     </footer>
 
